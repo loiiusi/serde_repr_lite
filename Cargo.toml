@@ -1,0 +1,16 @@
+[package]
+name = "serde_repr_lite"
+version = "0.1.0"
+edition = "2024"
+description = "lightweight replacement of `serde_repr` crate"
+readme = "README.md"
+repository = "https://github.com/loiiusi/serde_repr_lite"
+license = "MIT OR Apache-2.0"
+keywords = ["integer", "serde", "serialization"]
+categories = ["encoding", "no-std", "no-std::no-alloc"]
+
+[dependencies]
+serde_core = { version = "1.0.229", default-features = false }
+
+[dev-dependencies]
+serde_json = { version = "1.0.154", default-features = false, features = ["alloc"] }
